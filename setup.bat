@@ -16,6 +16,10 @@ echo downloading Chrome
 powershell -Command "iwr -useb http://dl.google.com/chrome/install/375.126/chrome_installer.exe -Outfile chrome.exe"
 echo Chrome download complete
 
+echo downloading steam
+
+powershell -Command "iwr -useb https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe -Outfile steam.exe
+
 echo Running Instalation files
 
 start /wait chrome.exe
